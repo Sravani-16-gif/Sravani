@@ -1,0 +1,21 @@
+{
+	"name": "LS_ONPREMSQL",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "JAMALAPURAPU\\SQLEXPRESS",
+			"database": "LocalDB",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "sqluser",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJlY2Y5NmQzOS04ODE1LTRkNTgtOWY1MS0xYzcxNjQzZTIwMTUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "DevselfhostedintegrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

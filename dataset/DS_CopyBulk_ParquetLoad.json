@@ -1,0 +1,53 @@
+{
+	"name": "DS_CopyBulk_ParquetLoad",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_CopyBulk_ParquetLoad",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "delta"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "FirstName",
+				"type": "UTF8"
+			},
+			{
+				"name": "Gender",
+				"type": "UTF8"
+			},
+			{
+				"name": "StartDate",
+				"type": "UTF8"
+			},
+			{
+				"name": "LastLoginTime",
+				"type": "UTF8"
+			},
+			{
+				"name": "Salary",
+				"type": "UTF8"
+			},
+			{
+				"name": "Bonus",
+				"type": "UTF8"
+			},
+			{
+				"name": "SeniorManagement",
+				"type": "UTF8"
+			},
+			{
+				"name": "Team",
+				"type": "UTF8"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
